@@ -180,7 +180,7 @@ typedef enum{
 */
  }
 /*=================================================================*/
-
+//   タイム履歴の表示
 /*=================================================================*/
 //ロード時に呼び出される（セクションに含まれるセル数を返す（実装必須））
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -263,6 +263,9 @@ typedef enum{
 {
     return;
 }
+
+
+
 /*=================================================================*/
 // KonashiからのEvent受信時の処理
 /*=================================================================*/
@@ -414,6 +417,7 @@ typedef enum{
     RedBoxOpticalAxisStatus_Old = RedBoxOpticalAxisStatus_Now;
 
     
+ // startボタン押下＝Timmer Start　stopボタン押下＝Timmer Stop
     if(bButtonClickStatus)
     {
         // startボタン押下
