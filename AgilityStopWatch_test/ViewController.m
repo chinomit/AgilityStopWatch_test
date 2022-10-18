@@ -66,7 +66,7 @@ typedef enum{
 
 
 /**********************************************************************
-    ＊＊＊
+    ＊＊＊KONASHIの準備
 **********************************************************************/
 - (void)viewDidLoad
 {
@@ -92,6 +92,7 @@ typedef enum{
     [[Konashi shared]setSignalStrengthDidUpdateHandler:^(int value){
         [self KonashiStrength];}];
     
+    // ボタンのコーナーR指定
     // StopWatchReset Button
     StopWatchReset.layer.cornerRadius = 10;
 
@@ -130,6 +131,8 @@ typedef enum{
     BlueBoxOpticalAxisStatus_Old = TRUE;
     
 }
+// BLEの電波強度の表示
+
 - (void) DispBlueToothStatusMark:(BT_STATUS_MARK)BtStatusMark
 {
     switch(BtStatusMark)
@@ -163,6 +166,8 @@ typedef enum{
             break;
     }
 }
+
+//赤外線光軸ズレ　インジケータの定義
 //- (void) DispOpticalAxisStatusMark:(BOOL)OAStatusMark
 - (void) DispOpticalAxisStatusMark:(UILabel*)BoxOpticalAxis //:(BOOL)OAStatusMark
 {
@@ -205,8 +210,6 @@ typedef enum{
     }
     
 //    NSArray *cells = [HistoryList visibleCells];
-    
-    
     
     //番号の表示
     UILabel *idNoLabel = (UILabel*)[cell viewWithTag:1];
@@ -623,6 +626,10 @@ typedef enum{
     
 
 }
+
+//********************
+//StopWatch時間計算処理
+//******************
 - (void)updateTime:(NSTimer*)timer
 {
     

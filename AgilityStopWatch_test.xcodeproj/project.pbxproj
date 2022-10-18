@@ -43,7 +43,7 @@
 		F0E603CC18E32EC90038CD53 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F0E603D018E32EC90038CD53 /* AgilityStopWatch_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AgilityStopWatch_test-Info.plist"; sourceTree = "<group>"; };
 		F0E603D218E32EC90038CD53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F0E603D418E32EC90038CD53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0E603D418E32EC90038CD53 /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0E603D618E32EC90038CD53 /* AgilityStopWatch_test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AgilityStopWatch_test-Prefix.pch"; sourceTree = "<group>"; };
 		F0E603D718E32EC90038CD53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0E603D818E32EC90038CD53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -281,6 +281,7 @@
 				TargetAttributes = {
 					F0E603C418E32EC90038CD53 = {
 						DevelopmentTeam = 6NTFW224KX;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -414,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "C3799197-1AE9-4444-A0BC-8F7ED138F602";
 				SDKROOT = iphoneos;
@@ -465,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				PROVISIONING_PROFILE = "C3799197-1AE9-4444-A0BC-8F7ED138F602";
 				SDKROOT = iphoneos;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/showta/Documents/konashi-ios-sdk/Konashi";
@@ -478,16 +479,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6NTFW224KX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgilityStopWatch_test/AgilityStopWatch_test-Prefix.pch";
 				INFOPLIST_FILE = "AgilityStopWatch_test/AgilityStopWatch_test-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chino-tec";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinotec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = Ag2AgilityTimer;
 				TARGETED_DEVICE_FAMILY = 1;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/showta/Documents/konashi-ios-sdk/Konashi/**";
 				WRAPPER_EXTENSION = app;
@@ -499,16 +502,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6NTFW224KX;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AgilityStopWatch_test/AgilityStopWatch_test-Prefix.pch";
 				INFOPLIST_FILE = "AgilityStopWatch_test/AgilityStopWatch_test-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.chino-tec";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinotec;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = Ag2AgilityTimer;
 				TARGETED_DEVICE_FAMILY = 1;
 				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Users/showta/Documents/konashi-ios-sdk/Konashi/**";
 				WRAPPER_EXTENSION = app;
