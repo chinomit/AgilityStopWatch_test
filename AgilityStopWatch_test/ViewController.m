@@ -26,6 +26,12 @@
     NSMutableArray *TimeHistory_Time;
     NSMutableArray *TimeHistory_Memo;
 }
+- (void)clearTimeHistory {
+    // データのクリア処理
+    [TimeHistory_No removeAllObjects];
+    [TimeHistory_Time removeAllObjects];
+    [TimeHistory_Memo removeAllObjects];
+}
 
 
 
@@ -718,6 +724,8 @@ typedef enum{
             //下記のコードでボタンを追加します。また{}内に記述された処理がボタン押下時の処理なります。
              [alertController addAction:[UIAlertAction actionWithTitle:@"はい" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
               //「はい」ボタンがタップされた際の処理
+                 [self clearTimeHistory]; // データを削除する
+                 [self.HistoryList reloadData]; // テーブルビューを更新する
               }]];
 
             [alertController addAction:[UIAlertAction actionWithTitle:@"いいえ" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
