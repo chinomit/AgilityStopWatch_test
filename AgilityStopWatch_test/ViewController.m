@@ -31,6 +31,7 @@
     [TimeHistory_No removeAllObjects];
     [TimeHistory_Time removeAllObjects];
     [TimeHistory_Memo removeAllObjects];
+    TimeHistory_No_Counter = 0;
 }
 
 
